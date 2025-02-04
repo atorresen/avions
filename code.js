@@ -1,4 +1,6 @@
 var n;
+var textColor;
+var emColor;
 
 function start() {
   n = document.getElementById("sonnetNumber").value - 1;
@@ -7,6 +9,10 @@ function start() {
 }
 
 function buttons() {
+
+  textColor = getComputedStyle(document.getElementById("wordList")).getPropertyValue("--text");
+  emColor = getComputedStyle(document.getElementById("emEx")).getPropertyValue("--em");
+
   // create a button for each possible avion of the chosen sonnet
   var buttons = [];
   var len = (words[n]).length;
@@ -19,14 +25,15 @@ function buttons() {
   buttons = "<div class='scroll'><table>" + buttons.join("") + "</table><div>"
   document.getElementById("wordList").innerHTML = buttons;
   document.getElementById("wordCount").innerHTML = "(" + len + ")";
+  show(0);
 }
 
 function show(i) {
   // color selected button
   for( b of [...document.getElementsByTagName("button")] ){
-    b.style = "color: gray; font-weight: normal"
+    b.style = "color: " + textColor + "; font-weight: normal"
   };
-  document.getElementById(i + "").style = "color: black; font-weight: bold";
+  document.getElementById(i + "").style = "color: " + emColor + "; font-weight: bold";
 
   // color avion letters in sonnet text
   sonnet = sonnets[n].split("");

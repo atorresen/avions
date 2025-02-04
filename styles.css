@@ -1,33 +1,43 @@
+:root {
+  --bg: seashell;
+  --text: dimgray;
+  --sonnet: #aaa;
+  --em: #264;
+  --accent: #ccc;
+}
+
 body {
-  background-color: lightgray;
-  color: gray;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: serif;
   font-size: 1rem;
-  margin: 5%;
+  margin: 2% 5%;
 }
 
 em {
-  color: black;
+  color: var(--em);
   font-style: normal;
   font-weight: bold;
 }
 
 button {
-  background-color: lightgray;
+  background-color: var(--bg);
   border: none;
-  color: gray;
+  color: var(--text);
+  cursor: pointer;
   font-family: serif;
   font-size: 1rem;
   margin: 0;
   padding: 0;
 }
 
-button:active {
-  color: black;
+td {
+  color: var(--sonnet);
+  vertical-align: text-top;
 }
 
-td {
-  vertical-align: text-top;
+#wordList {
+  width: 150px;
 }
 
 .scroll {
@@ -36,15 +46,16 @@ td {
 }
 
 input {
-  background-color: lightgray;
-  border: solid gray 1px;
+  background-color: var(--bg);
+  color: var(--text);
+  border: solid var(--text) 1px;
   font-family: serif;
 }
 
-#wordCount {
-  color: #aaa;
+label {
+  color: var(--text);
 }
 
-#wordList {
-  width: 150px;
+#wordCount {
+  color: var(--accent);
 }
