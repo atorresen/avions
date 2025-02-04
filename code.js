@@ -1,4 +1,4 @@
-var n = 0;
+var n;
 
 function start() {
   n = document.getElementById("sonnetNumber").value - 1;

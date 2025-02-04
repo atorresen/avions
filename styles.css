@@ -44,3 +44,7 @@ input {
 #wordCount {
   color: #aaa;
 }
+
+#wordList {
+  width: 150px;
+}
