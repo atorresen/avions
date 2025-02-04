@@ -9,7 +9,8 @@ function start() {
 function buttons() {
   // create a button for each possible avion of the chosen sonnet
   var buttons = [];
-  for(let i = 0; i < (words[n]).length; i++) {
+  var len = (words[n]).length;
+  for(let i = 0; i < len; i++) {
     var w = words[n][i];
     buttons.push(
       "<tr><td><button id = " + i + " onclick='show(" + i + ")'>" + w + "</button></td></tr>"
@@ -17,14 +18,15 @@ function buttons() {
   };
   buttons = "<div class='scroll'><table>" + buttons.join("") + "</table><div>"
   document.getElementById("wordList").innerHTML = buttons;
+  document.getElementById("wordCount").innerHTML = "(" + len + ")";
 }
 
 function show(i) {
   // color selected button
   for( b of [...document.getElementsByTagName("button")] ){
-    b.style.color = "gray"
+    b.style = "color: gray; font-weight: normal"
   };
-  document.getElementById(i + "").style.color = "black";
+  document.getElementById(i + "").style = "color: black; font-weight: bold";
 
   // color avion letters in sonnet text
   sonnet = sonnets[n].split("");

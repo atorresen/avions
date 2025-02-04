@@ -18,6 +18,8 @@ button {
   color: gray;
   font-family: serif;
   font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 button:active {
@@ -31,4 +33,14 @@ td {
 .scroll {
   max-height: 500px;
   overflow-y: scroll;
+}
+
+input {
+  background-color: lightgray;
+  border: solid gray 1px;
+  font-family: serif;
+}
+
+#wordCount {
+  color: #aaa;
 }
