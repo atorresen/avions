@@ -3,34 +3,42 @@
   <head>
     <meta charset="utf-8">
     <script src="sonnets.js"></script>
-  	<script src="words.js"></script>
-  	<script src="indexes.js"></script>
-  	<script src="code.js"></script>
-  	<link rel="stylesheet" href="styles.css">
+    <script src="words.js"></script>
+    <script src="indexes.js"></script>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Avions</title>
   </head>
   <body onload="start();">
+    <h1>avions</h1>
     <p>An avion is a selection of sequential letters of a text.<br>
       For example, the word "avion" is an avion of the word
-        "<em id=emEx >a</em>bbre<em>vi</em>ati<em>on</em>."<br>
-      I learned about avions at the 2024 Récréations OuLiPo workshop.
+        "<em id=emEx >A</em>bbre<em>VI</em>ati<em>ON</em>."<br>
     </p>
 
     <p>Here are avions built from
       one letter of each line of each of Shakespeare's 154 sonnets:</p>
     <table>
-  		<tr>
-  			<td id="wordList" />
-  			<td>
+      <tr>
+        <td id="wordList" />
+        <td>
           <label for="sonnetNumber">Sonnet </label>
           <input type="number" id="sonnetNumber" name="sonnetNumber"
             value="1" onchange="start()" min="1" max="154" />
-  				<p id="sonnet" />
-  			</td>
-  		</tr>
-  		<tr>
-  			<td id="wordCount" />
-  		</tr>
-  	</table>
+          <p id="sonnet" />
+        </td>
+      </tr>
+      <tr>
+        <td id="wordCount" />
+      </tr>
+    </table>
+
+    <div class="note">
+      I ca<em class="em2">ME</em> ac<em class="em2">R</em>oss avions at the
+      2024 Ré<em class="em2">C</em>réat<em class="em2">I</em>ons
+      <em class="em2"><a href="https://oulipo.net/">OuLiPo</a></em> workshop.
+      <br>
+      <a href="https://atorresen.github.io/art/">—AnneMarie Torresen</a>
+    </div>
   </body>
 </html>

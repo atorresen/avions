@@ -1,8 +1,9 @@
 :root {
   --bg: seashell;
-  --text: dimgray;
-  --sonnet: #aaa;
-  --em: #264;
+  --text: #888;
+  --sonnet: #bbb;
+  --em: tomato;
+  --em2: cornflowerblue;
   --accent: #ccc;
 }
 
@@ -18,6 +19,11 @@ em {
   color: var(--em);
   font-style: normal;
   font-weight: bold;
+}
+
+.em2, a {
+  color: var(--em2);
+  text-decoration: none;
 }
 
 button {
@@ -41,7 +47,7 @@ td {
 }
 
 .scroll {
-  max-height: 500px;
+  height: 500px;
   overflow-y: scroll;
 }
 
@@ -58,4 +64,9 @@ label {
 
 #wordCount {
   color: var(--accent);
+}
+
+.note {
+  color: var(--sonnet);
+  margin-top: 29px;
 }
