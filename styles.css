@@ -1,16 +1,23 @@
 :root {
-  --bg: seashell;
+  /* --bg: seashell;
   --text: #888;
   --sonnet: #bbb;
   --em: tomato;
   --em2: cornflowerblue;
-  --accent: #ccc;
+  --accent: #ccc; */
+
+  --bg: #224;
+  --text: aliceblue;
+  --sonnet: lightsteelblue;
+  --em: magenta;
+  --em2: #ddd;
+  --accent: lightslategray;
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: serif;
+  font-family: sans-serif;
   font-size: 1rem;
   margin: 2% 5%;
 }
@@ -31,7 +38,6 @@ button {
   border: none;
   color: var(--text);
   cursor: pointer;
-  font-family: serif;
   font-size: 1rem;
   margin: 0;
   padding: 0;
@@ -55,7 +61,8 @@ input {
   background-color: var(--bg);
   color: var(--text);
   border: solid var(--text) 1px;
-  font-family: serif;
+  margin: 2px;
+  padding: 2px;
 }
 
 label {
