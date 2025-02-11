@@ -4,6 +4,7 @@
   --sonnet: lightsteelblue;
   --em: magenta;
   --accent: lightslategray;
+  --size: calc(max(2vw, 1rem));
 }
 
 body {
@@ -29,7 +30,7 @@ button {
   border: none;
   color: var(--text);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: var(--size);
   margin: 0;
   padding: 0;
 }
@@ -38,6 +39,11 @@ td {
   color: var(--sonnet);
   padding-right: 20px;
   vertical-align: text-top;
+}
+
+.main {
+  width: 100%;
+  font-size: var(--size);
 }
 
 #wordList {
@@ -53,6 +59,7 @@ input {
   background-color: var(--bg);
   color: var(--text);
   border: solid var(--text) 1px;
+  font-size: var(--size);
   margin: 2px;
   padding: 2px;
 }
