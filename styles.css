@@ -1,16 +1,8 @@
 :root {
-  /* --bg: seashell;
-  --text: #888;
-  --sonnet: #bbb;
-  --em: tomato;
-  --em2: cornflowerblue;
-  --accent: #ccc; */
-
   --bg: #224;
   --text: aliceblue;
   --sonnet: lightsteelblue;
   --em: magenta;
-  --em2: #ddd;
   --accent: lightslategray;
 }
 
@@ -28,8 +20,7 @@ em {
   font-weight: bold;
 }
 
-.em2, a {
-  color: var(--em2);
+a {
   text-decoration: none;
 }
 
@@ -45,6 +36,7 @@ button {
 
 td {
   color: var(--sonnet);
+  padding-right: 20px;
   vertical-align: text-top;
 }
 
