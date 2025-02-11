@@ -14,22 +14,25 @@ without any warranty.
 
 This is from Taper #14: Sonnets, Spring 2025:
 
-https://taper.badquar.to/14/title_of_your_work.html
+https://taper.badquar.to/14/avions.html
 
-An "avion" is an AbbreVIatiON of a text from sequential letters.
+An avion is a selection of sequential letters from a text.
 For example, "avion" is an avion of "AbbreVIatiON."
 
-I learned about avions at the OuLiPo Récréations workshop in July 2024.
+I learned about avions at the 2024 OuLiPo Récréations workshop.
 
 For this entry in Taper #14: Sonnets, I collected 14 avions of
-William Shakespeare's 14th sonnet that contain exactly 14 letters.
+William Shakespeare's 14th sonnet that are 14-letter words
+in which each letter appears in a separate line.
 
-See atorresen.github.io/avions for all possible avions of this form.
+Sonnet 14 yields 84 avions that meet this constraint,
+which is the most of any Shakespearean sonnet!
+See https://atorresen.github.io/avions for all possible avions of this form.
 
 -->
 
 	<style>
-		body {
+		body {3
 			margin: 0;
 			overflow: hidden
 		}
@@ -70,42 +73,41 @@ See atorresen.github.io/avions for all possible avions of this form.
 			<a href="about.html#Torresen">AnneMarie Torresen</a>
 		</h1>
 	</header>
-	<div style="margin:10%">
-		Fourteen 14-letter <a href="https://atorresen.github.io/avions" style="color:red">
-			avions</a> of Shakespeare's Sonnet 14
-		<button onclick="f()">⇾</button>
-		<p id="w" style="color:gray"></p>
-		<p id="s"></p>
-	</div>
-	<script>
-		l=[
-			[4,74,109,143,202,256,273,311,350,413,453,501,559,609],
-			[36,73,96,139,204,235,273,319,361,436,473,489,568,586],
-			[2,55,98,152,205,230,297,315,382,433,465,502,544,607],
-			[10,46,109,127,205,221,280,333,355,426,454,489,569,622],
-			[29,63,101,125,208,243,300,331,358,424,452,509,575,600],
-			[15,56,95,149,177,230,288,328,388,421,453,501,545,609],
-			[19,51,118,124,201,235,273,316,350,433,446,489,548,617],
-			[1,67,96,149,176,226,279,312,360,429,457,530,572,603],
-			[38,47,106,132,205,234,265,325,349,424,467,489,574,607],
-			[13,51,88,157,177,225,287,311,373,405,467,489,545,614],
-			[5,63,106,164,176,239,294,311,350,413,453,512,569,590],
-			[5,68,113,156,207,246,264,343,350,400,469,489,548,617],
-			[4,73,113,140,201,253,294,337,367,413,453,501,559,609],
-			[36,73,93,130,178,226,282,323,382,433,465,505,568,593]
-		];
-		g=n=>(document.getElementById(n));
-		i=0;
-		f=()=>{
-			w=[];
-			s="Not from the stars do I my judgment pluck;<br>And yet methinks I have astronomy,<br>But not to tell of good or evil luck<br>Of plagues, of dearths, or seasons' quality;<br>Nor can I fortune to brief minutes tell,<br>Pointing to each his thunder, rain and wind,<br>Or say with princes if it shall go well,<br>By oft predict that I in heaven find:<br>But from thine eyes my knowledge I derive,<br>And, constant stars, in them I read such art<br>As truth and beauty shall together thrive,<br>If from thyself to store thou woulds't convert;<br>Or else of thee this I prognosticate:<br>Thy end is truth and beauty's doom and date.".split("");
-			for(j of l[i%14]){
-				w.push(s[j].toLowerCase());
-				s[j]="<span style='color:red;font-weight:bold'>"+s[j].toUpperCase()+"</span>"
-			};
-			i++;
-			for(x of ["w","s"]){g(x).innerHTML=eval(x).join("")}
-		}
-	</script>
+		<div style="margin:10%">
+			Fourteen 14-letter <a href="https://atorresen.github.io/avions" style="color:red">
+				avions</a> of Shakespeare's Sonnet 14
+			<button onclick="f()">⇾</button>
+			<p id="w" style="color:gray"></p>
+			<p id="s"></p>
+		</div>
+		<script>
+			l=[
+				[4,74,109,143,202,256,273,311,350,413,453,501,559,609],
+				[36,73,96,139,204,235,273,319,361,436,473,489,568,586],
+				[2,55,98,152,205,230,297,315,382,433,465,502,544,607],
+				[10,46,109,127,205,221,280,333,355,426,454,489,569,622],
+				[29,63,101,125,208,243,300,331,358,424,452,509,575,600],
+				[15,56,95,149,177,230,288,328,388,421,453,501,545,609],
+				[19,51,118,124,201,235,273,316,350,433,446,489,548,617],
+				[1,67,96,149,176,226,279,312,360,429,457,530,572,603],
+				[38,47,106,132,205,234,265,325,349,424,467,489,574,607],
+				[13,51,88,157,177,225,287,311,373,405,467,489,545,614],
+				[5,63,106,164,176,239,294,311,350,413,453,512,569,590],
+				[5,68,113,156,207,246,264,343,350,400,469,489,548,617],
+				[4,73,113,140,201,253,294,337,367,413,453,501,559,609],
+				[36,73,93,130,178,226,282,323,382,433,465,505,568,593]
+			];
+			i=0;
+			f=()=>{
+				w=[];
+				s="Not from the stars do I my judgment pluck;<br>And yet methinks I have astronomy,<br>But not to tell of good or evil luck<br>Of plagues, of dearths, or seasons' quality;<br>Nor can I fortune to brief minutes tell,<br>Pointing to each his thunder, rain and wind,<br>Or say with princes if it shall go well,<br>By oft predict that I in heaven find:<br>But from thine eyes my knowledge I derive,<br>And, constant stars, in them I read such art<br>As truth and beauty shall together thrive,<br>If from thyself to store thou woulds't convert;<br>Or else of thee this I prognosticate:<br>Thy end is truth and beauty's doom and date.".split("");
+				for(j of l[i%14]){
+					w.push(s[j].toLowerCase());
+					s[j]="<span style='color:red;font-weight:bold'>"+s[j].toUpperCase()+"</span>"
+				};
+				i++;
+				for(x of ["w","s"]){document.getElementById(x).innerHTML=eval(x).join("")}
+			}
+		</script>
 </body>
 </html>
