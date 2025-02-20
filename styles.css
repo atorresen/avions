@@ -48,7 +48,7 @@ td {
 }
 
 #wordList {
-  width: 150px;
+  width: 220px;
 }
 
 .scroll {
@@ -59,11 +59,12 @@ td {
 input {
   background-color: var(--bg);
   color: var(--text);
-  border: solid var(--text) 1px;
+  border: solid var(--accent) 1px;
   font-family: serif;
   font-size: var(--size);
   margin: 2px;
   padding: 2px;
+  width: 80px;
 }
 
 label {
