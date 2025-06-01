@@ -21,6 +21,10 @@ em {
   font-weight: bold;
 }
 
+.b {
+ color: navy;
+}
+
 a {
   text-decoration: none;
 }
@@ -76,6 +80,6 @@ label {
 }
 
 .note {
-  color: var(--sonnet);
+  color: var(--accent);
   margin-top: 29px;
 }
