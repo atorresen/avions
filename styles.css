@@ -1,24 +1,24 @@
 :root {
-  --bg: #eee;
-  --text: #222;
-  --sonnet: lightsteelblue;
-  --em: red;
-  --accent: lightslategray;
-  --size: calc(max(1.8vw, 1rem));
+	--bg: #eee;
+	--text: #222;
+	--sonnet: lightsteelblue;
+	--em: red;
+	--accent: lightslategray;
+	--size: calc(max(1.8vw, 1rem));
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: serif;
-  font-size: 1rem;
-  margin: 2% 5%;
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: serif;
+	font-size: 1rem;
+	margin: 2% 5%;
 }
 
 em {
-  color: var(--em);
-  font-style: normal;
-  font-weight: bold;
+	color: var(--em);
+	font-style: normal;
+	font-weight: bold;
 }
 
 .b {
@@ -26,72 +26,72 @@ em {
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 button {
-  background-color: var(--bg);
-  border: none;
-  color: var(--text);
-  cursor: pointer;
-  font-family: serif;
-  font-size: var(--size);
-  margin: 0;
-  padding: 0;
+	background-color: var(--bg);
+	border: none;
+	color: var(--text);
+	cursor: pointer;
+	font-family: serif;
+	font-size: var(--size);
+	margin: 0;
+	padding: 0;
 }
 
 td {
-  color: var(--sonnet);
-  padding-right: 20px;
-  vertical-align: text-top;
+	color: var(--sonnet);
+	padding-right: 20px;
+	vertical-align: text-top;
 }
 
 .main {
-  width: 100%;
-  font-size: var(--size);
+	width: 100%;
+	font-size: var(--size);
 }
 
 #wordList {
-  width: 220px;
+	width: 220px;
 }
 
 .scroll {
-  height: 500px;
-  overflow-y: scroll;
+	height: 500px;
+	overflow-y: scroll;
 }
 
 input {
-  background-color: var(--bg);
-  color: var(--text);
-  border: solid var(--accent) 1px;
-  font-family: serif;
-  font-size: var(--size);
-  margin: 2px;
-  padding: 2px;
-  width: 80px;
+	background-color: var(--bg);
+	color: var(--text);
+	border: solid var(--accent) 1px;
+	font-family: serif;
+	font-size: var(--size);
+	margin: 2px;
+	padding: 2px;
+	width: 80px;
 }
 
 label {
-  color: var(--text);
+	color: var(--text);
 }
 
 #wordCount {
-  color: var(--accent);
+	color: var(--accent);
 }
 
 .note {
-  color: var(--accent);
-  margin-top: 29px;
+	color: var(--accent);
+	margin-top: 29px;
 }
 
 /* .tooltip:hover::after, .tooltipOn { */
 .tooltip {
-  display: none;
-  position: absolute;
+	display: none;
+	position: absolute;
 	color: white;
-  background: black;
+	background: black;
 	border-radius: 6px;
-  padding: 5px;
+	padding: 5px;
 	margin: -16px 0 10px 20px;
 	text-align: center;
 }

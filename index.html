@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script src="sonnets.js"></script>
-    <script src="words.js"></script>
-    <script src="indexes.js"></script>
-    <script src="code.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="avion.ico">
-    <title>Avions</title>
-  </head>
-  <body onload="start();">
-    <h1>avions</h1>
-    <p>An avion is a selection of sequential letters from a text.<br>
-      For example, "avion" is an avion of the word
-        "<em id=emEx class="b">A</em>bbre<em class="b">VI</em>ati<em class="b">ON</em>."<br>
-    </p>
+	<head>
+		<meta charset="utf-8">
+		<script src="sonnets.js"></script>
+		<script src="words.js"></script>
+		<script src="indexes.js"></script>
+		<script src="code.js"></script>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="avion.ico">
+		<title>Avions</title>
+	</head>
+	<body onload="start();">
+		<h1>avions</h1>
+		<p>An avion is a selection of sequential letters from a text.<br>
+			For example, "avion" is an avion of the word
+				"<em id=emEx class="b">A</em>bbre<em class="b">VI</em>ati<em class="b">ON</em>."<br>
+		</p>
 
-    <p>
+		<p>
 			Here are <span onmouseenter="tt()" onmouseleave="tt()">avions built from one letter of each line<span
 				onclick="tt();" style="border-bottom: 1px dotted black;">*</span>
 			</span> of each of Shakespeare's 154 sonnets:
@@ -25,30 +25,30 @@
 				un AVION dans laquelle on prends une lettre de chaque vers... un A(VERS)ION ?
 			</div>
 		</p>
-    <br>
+		<br>
 
-    <table class="main">
-      <tr>
-        <td id="wordList" />
-        <td>
-          <label for="sonnetNumber">Sonnet </label>
-          <input type="number" id="sonnetNumber" name="sonnetNumber"
-            value="14" onchange="start()" min="1" max="154" />
-          <p id="sonnet" />
-        </td>
-      </tr>
-      <tr>
-        <td id="wordCount" />
-      </tr>
-    </table>
+		<table class="main">
+			<tr>
+				<td id="wordList" />
+				<td>
+					<label for="sonnetNumber">Sonnet </label>
+					<input type="number" id="sonnetNumber" name="sonnetNumber"
+						value="14" onchange="start()" min="1" max="154" />
+					<p id="sonnet" />
+				</td>
+			</tr>
+			<tr>
+				<td id="wordCount" />
+			</tr>
+		</table>
 
-    <br>
+		<br>
 
-    <div class="note">
-      I ca<em class="b">ME</em> ac<em class="b">R</em>oss avions at the 2024 Ré<em class="b">C</em>réat<em class="b">I</em>ons
-      <a href="https://oulipo.net/"><em class="b">OuLiPo</em></a> workshop.
-      <br>
-      <a href="https://atorresen.github.io/art/" class="note">-AnneMarie Torresen</a>
-    </div>
-  </body>
+		<div class="note">
+			I ca<em class="b">ME</em> ac<em class="b">R</em>oss avions at the 2024 Ré<em class="b">C</em>réat<em class="b">I</em>ons
+			<a href="https://oulipo.net/"><em class="b">OuLiPo</em></a> workshop.
+			<br>
+			<a href="https://atorresen.github.io/art/" class="note">-AnneMarie Torresen</a>
+		</div>
+	</body>
 </html>
