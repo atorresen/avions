@@ -42,3 +42,16 @@ function show(i) {
   };
   document.getElementById("sonnet").innerHTML = sonnet.join("");
 }
+
+
+/////// tooltip ///////
+var ttQ = false;
+
+function tt() {
+	ttQ = !ttQ;
+	if (ttQ) {
+		document.getElementById("tt").style.display = "block";
+	} else {
+		document.getElementById("tt").style.display = "none";
+	}
+}

@@ -83,3 +83,15 @@ label {
   color: var(--accent);
   margin-top: 29px;
 }
+
+/* .tooltip:hover::after, .tooltipOn { */
+.tooltip {
+  display: none;
+  position: absolute;
+	color: white;
+  background: black;
+	border-radius: 6px;
+  padding: 5px;
+	margin: -16px 0 10px 20px;
+	text-align: center;
+}
