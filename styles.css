@@ -1,5 +1,5 @@
 :root {
-	--bg: #eee;
+	--bg: ghostwhite;
 	--text: #222;
 	--sonnet: lightsteelblue;
 	--em: red;
@@ -22,11 +22,7 @@ em {
 }
 
 .b {
- color: navy;
-}
-
-a {
-	text-decoration: none;
+ color: midnightblue;
 }
 
 button {
